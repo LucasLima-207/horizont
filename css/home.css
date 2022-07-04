@@ -94,7 +94,7 @@ header, .main{
     color: var(--palet-main-color-1);
 }
 .nav-main{
-    margin: 40px 300px;
+    margin: 40px auto;
     width: 800px;
 }
 .nav-list{
@@ -121,6 +121,7 @@ header, .main{
     height: 20px;
 }
 .msg-intro{
+    margin: auto;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -133,6 +134,10 @@ header, .main{
 }
 .main-infor{
     background: var(--palet-main-color-4);
+}
+#hour{
+    text-align: center;
+    color: var(--palet-main-color-1);
 }
 .explore{
     margin: 10px 0;
@@ -149,10 +154,10 @@ header, .main{
     height: 18px;
 }
 .section-home{
-    margin: 0px 190px;
+    margin: 0px 180px;
     display: grid;
     padding-top: 80px;
-    grid-template-columns: 940px;
+    grid-template-columns: 1000px;
     grid-template-rows: 200px 100px 400px 100px;
 
 }
@@ -189,8 +194,7 @@ header, .main{
 .room-view{
     display: flex;
     flex-direction: row;
-    gap: 20px;
-    padding-left: 30px;
+    gap: 10px;
     justify-content: center;
     justify-items: center;
     align-items: center;
@@ -208,4 +212,66 @@ header, .main{
     color: var(--palet-main-color-5);
     border-radius: 5px;
     text-decoration: none;
+}
+.service-intro{
+    background: url("../img/backround/evangeline-shaw-VLkoOabAxqw-unsplash.jpg");
+    background-attachment: fixed;
+    background-size: contain;
+    background-position: center;
+    background-size: 100% 100%;
+    height: 600px;
+}
+.intro-service{
+    margin: 50px 50px;
+    height: 400px;
+    width: 400px;
+    background: var(--palet-main-color-1);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.637);
+    border: inset 2px solid black;
+}
+.service-infor{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 340px;
+    background: linear-gradient( #000000e7 ,#252626);
+}
+.itens-infor{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+#title-infor{
+    color: var(--palet-main-color-2);
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    height: 100px;
+    background: var(--palet-main-color-3);
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+    transform: rotateZ(180deg);
+}
+#title-infor h2{
+    color: var(--palet-main-color-5);
+    transform: rotateZ(180deg);
+}
+.itens-service{
+    background: var(--palet-main-color-5);
+    width: 200px;
+    height: 200px;
+    clip-path: circle(50% at 50% 50%);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+.itens-service img{
+    object-fit: cover;
+    width: 80px;
+    height: 80px;
+}
+.list-rooms{
+    display: flex;
+    height: 600px;
+    background-color: var(--palet-main-color-5);
 }
