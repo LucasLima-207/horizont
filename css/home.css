@@ -272,6 +272,52 @@ header, .main{
 }
 .list-rooms{
     display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px 24px;
     height: 600px;
     background-color: var(--palet-main-color-5);
+}
+.itens-room{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 420px;
+    height: 480px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.356);
+}
+.itens-room h2{
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: var(--font-robotoo);
+    color: var(--palet-main-color-2);
+    position: relative;
+}
+.itens-room p{
+    max-width: 65ch;
+    padding: 0px 10px;
+}
+.itens-room h2::before{
+    content: "";
+    width: 50px;
+    height: 20px;
+    background: var(--palet-main-color-3);
+    bottom: 10px;
+    left: 0px;
+    position: absolute;
+}
+.itens-room img{
+    object-fit: contain;
+    width: 400px;
+}
+.cost{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.4rem;
+}
+.room-intro{
+    width: 100%;
+    background: url("../img/backround/edvin-johansson-rlwE8f8anOc-unsplash.jpg") content-box;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 400px;
 }
