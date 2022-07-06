@@ -213,28 +213,14 @@ header, .main{
     border-radius: 5px;
     text-decoration: none;
 }
-.service-intro{
-    background: url("../img/backround/evangeline-shaw-VLkoOabAxqw-unsplash.jpg");
-    background-attachment: fixed;
-    background-size: contain;
-    background-position: center;
-    background-size: 100% 100%;
-    height: 600px;
-}
-.intro-service{
-    margin: 50px 50px;
-    height: 400px;
-    width: 400px;
-    background: var(--palet-main-color-1);
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.637);
-    border: inset 2px solid black;
-}
 .service-infor{
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    height: 340px;
+    margin: 20px 0px 0px 0px;
+    height: 400px;
     background: linear-gradient( #000000e7 ,#252626);
+    background-attachment: fixed;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
 }
 .itens-infor{
     display: flex;
@@ -255,24 +241,24 @@ header, .main{
 #title-infor h2{
     color: var(--palet-main-color-5);
     transform: rotateZ(180deg);
+    position: relative;
 }
-.itens-service{
-    background: var(--palet-main-color-5);
-    width: 200px;
-    height: 200px;
-    clip-path: circle(50% at 50% 50%);
-    display: grid;
-    align-items: center;
-    justify-items: center;
+#title-infor h2::before{
+    position: absolute;
+    content: url("../img/icones/redes-socias/icons8-reserva-50.png");
+    bottom: 30px;
+    align-self: center;
+    margin-left: 68px;
+    border-radius: 100px;
+    border: 2px solid var(--palet-main-color-5);
 }
 .list-rooms{
     display: flex;
     flex-direction: row;
-    gap: 40px;
-    padding: 20px 20px;
-    margin: -160px 40px 0px 40px;
-    height: 500px;
-    background-color: var(--palet-main-color-5);
+    gap: 10px;
+    padding: 20px 60px;
+    margin: -240px 40px 0px 40px;
+    height: 400px;
 }
 .itens-room{
     display: flex;
@@ -282,6 +268,9 @@ header, .main{
     width: 380px;
     height: 500px;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.356);
+    border-radius: 5px;
+    background: var(--palet-main-color-5);
+    z-index: 2;
 }
 .itens-room h2{
     text-align: center;
@@ -293,15 +282,16 @@ header, .main{
 .itens-room p{
     max-width: 75ch;
     font-family: Arial, Helvetica, sans-serif;
-    padding-right: 80px;
+    padding-right: 60px;
+    padding-left: 18px;
     position: relative;
 }
 .itens-room p::before{
     content: "";
     position: absolute;
-    width: 2px;
+    width: 4px;
     height: 120px;
-    left: -4px;
+    left: -2px;
     background: var(--palet-main-color-3);
 }
 .itens-room h2::before{
@@ -310,13 +300,14 @@ header, .main{
     height: 20px;
     background: var(--palet-main-color-3);
     bottom: 10px;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
     left: 0px;
     position: absolute;
 }
 .itens-room img{
     object-fit: contain;
     width: 380px;
-}
+    align-content: center; }
 .cost{
     display: flex;
     flex-direction: row;
@@ -351,4 +342,44 @@ header, .main{
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 600px;
+}
+.section-home-background{
+    background: linear-gradient( #000000e7 ,#252626);
+    height: 400px;
+    z-index: -1;
+    width: 100%;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+    transform: rotateZ(180deg);
+    margin: -260px 0px 0px 0px;
+}
+.room-section{
+    background: url("../img/backround/edvin-johansson-rlwE8f8anOc-unsplash.jpg");
+    /*
+    background: var(--palet-main-color-5);*/
+    height: 740px;
+    background-attachment: fixed;
+}
+.service-list{
+    margin: 10px 0px;
+    height: 200px;
+    background: var(--palet-main-color-3);
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.iten-infor{
+    display: flex;
+    width: 160px;
+    height: 160px;
+    align-items: center;
+    justify-content: center;
+    clip-path: circle(50% at 50% 50%);
+    background: var(--palet-main-color-5);
+}
+.iten-infor img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    position: center;
 }
